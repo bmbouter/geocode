@@ -15,7 +15,6 @@ for i, entry in enumerate(list_feed.entry):
         try:
             lat, lng = geocode(address)
         except Exception as E:
-            import pdb;pdb.set_trace()
             print 'EXCEPTION CAUGHT ... WRITING TO FILE'
             f.write(address)
             continue
